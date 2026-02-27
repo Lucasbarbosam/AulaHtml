@@ -15,6 +15,7 @@ label {
  </style> -->
 </head>
 <body>
+  <main>
  <h1>Cadastro</h1>
  <form>
   <div>
@@ -33,8 +34,9 @@ label {
     <label class="block" for="nasc">Data de nascimento</label>
     <input type="date" name="nasc" id="nasc">
     </div>
+  <div>
+    <legend>Qual o seu nível?</legend>
     <div>
-      <legend>Qual o seu nível?</legend>
       <input type="radio" name="nivel" id="jr" value="junior">
       <label for="">Júnior</label>
     </div>
@@ -54,20 +56,24 @@ label {
       <label for="observacao">Em caso de outro, especifique:</label>
       <textarea class="block" name="observacao" id="observacao" maxlength="10"></textarea>
     </div>
+    </div>
     <div>
       <legend>Quais as suas Stack?</legend>
-      <input type="checkbox" name="stcak" id="html" value="html">
-      <label for="html">HTML</label>
+      <div>
+        <input type="checkbox" name="stcak" id="html" value="html">
+        <label for="html">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" name="stcak" id="css" value="css">
+        <label for="html">CSS</label>
+      </div>
+      <div>
+        <input type="checkbox" name="stcak" id="js" value="JavaScript">
+        <label for="html">JavaScript</label>
+      </div>
     </div>
-    <div>
-      <input type="checkbox" name="stcak" id="css" value="css">
-      <label for="html">CSS</label>
-    </div>
-    <div>
-      <input type="checkbox" name="stcak" id="js" value="JavaScript">
-      <label for="html">JavaScript</label>
-    </div>
-  <button>Cadastrar</button>
+  <button class="btn">Cadastrar</button>
  </form>
+ </main>
 </body>
 </html>

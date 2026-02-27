@@ -1,11 +1,56 @@
-/* Seletor de tag */
-
-h1 {
- color: red;
+/* Seletor Global "*" */
+* {
+    margin: 0; /* Margem: Espaçamento Externo */
+    padding: 0; /* Padding: Espaçamento Interno*/
+    border: 0; /* Border: Borda */
+    outline: 0; /* Outline: Linha fora da Borda*/
+    box-sizing: border-box; /* Serve para que ele considere a borda como limite em relação ao tamanho da caixa*/
 }
 
-/* Seletor de classe */
+body {
+    color: #000000dd;
+    background-color: #e6e6e6;
+}
 
+main {
+    width: 30%;
+    background-color: rgb(175, 174, 174);
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* form { 
+    place-items: center;
+} */
+
+/* Seletor de tag <h1> */
+h1 {
+    text-align: start;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#nome, #email, #senha {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #ffffffc3;
+}
+
+#nasc, textarea {
+    border-radius: 5px;
+    background-color: #ffffffc3;
+}
+
+/* Seletor de classe "." */
 .block {
  display: block;
+}
+.btn {
+    background-color: rgb(20, 34, 187);
+    color: #fff;
+    padding: 5px 8px 5px 8px; /* sequencia: top, rigth, bottom, left */
+    border-radius: 8px; /* Arredondamento da borda */
+    width: 100%;
 }
